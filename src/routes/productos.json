@@ -1,0 +1,90 @@
+[
+    {
+        "id": "1",
+        "title": "Iphone X",
+        "description": "iPhone X",
+        "price": 24.99,
+        "code": "002",
+        "stock": 3
+    },
+    {
+        "id": "2",
+        "title": "Samsung Galaxy S20",
+        "description": "Samsung Galaxy S20",
+        "price": 29.99,
+        "code": "003",
+        "stock": 5
+    },
+    {
+        "id": "3",
+        "title": "Google Pixel 4a",
+        "description": "Google Pixel 4a",
+        "price": 19.99,
+        "code": "004",
+        "stock": 7
+    },
+    {
+        "id": "4",
+        "title": "OnePlus 8 Pro",
+        "description": "OnePlus 8 Pro",
+        "price": 34.99,
+        "code": "005",
+        "stock": 2
+    },
+    {
+        "id": "5",
+        "title": "Xiaomi Mi 11",
+        "description": "Xiaomi Mi 11",
+        "price": 25.99,
+        "code": "006",
+        "stock": 6
+    },
+    {
+        "id": "6",
+        "title": "LG V60 ThinQ",
+        "description": "LG V60 ThinQ",
+        "price": 21.99,
+        "code": "007",
+        "stock": 4
+    },
+    {
+        "id": "7",
+        "title": "Motorola Edge+",
+        "description": "Motorola Edge+",
+        "price": 27.99,
+        "code": "008",
+        "stock": 3
+    },
+    {
+        "id": "8",
+        "title": "Sony Xperia 1 II",
+        "description": "Sony Xperia 1 II",
+        "price": 32.99,
+        "code": "009",
+        "stock": 5
+    },
+    {
+        "id": "9",
+        "title": "Huawei P40 Pro",
+        "description": "Huawei P40 Pro",
+        "price": 23.99,
+        "code": "010",
+        "stock": 2
+    },
+    {
+        "id": "10",
+        "title": "Oppo Find X2 Pro",
+        "description": "Oppo Find X2 Pro",
+        "price": 29.99,
+        "code": "011",
+        "stock": 4
+    },
+    {
+        "id": "11",
+        "title": "Oppo Find X2 Pro",
+        "description": "Oppo Find X2 Pro",
+        "price": 29.99,
+        "code": "012",
+        "stock": 4
+    }
+]

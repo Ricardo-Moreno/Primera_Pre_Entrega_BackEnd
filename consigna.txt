@@ -1,0 +1,85 @@
+proyecto con Lenguaje node.js, express y file.system
+Disponer dos grupoas de Rutas en Router
+
+1. /api/products
+2. /api/carts/
+
+Configurar las siguientes Rutas(Se deben entregar en forma de arreglos)
+EJemplos:
+
+
+
+
+1. La ruta raiz Get/ debera listar todos los productos de la base
+
+res.send({status:"success",payload:products})
+
+2. la ryta GEt/:pid debera traer solo el producto con el id proporcionado
+
+res.send({status:"success",payload:product})
+
+3. La ruta Post/ debera agregar un nuevop producto con los campos:
+
+- id: el id no se manda desde el body, se autogenera como lo hemos visto desde os primeros entregables asegurando que nunca se repitan
+
+- title
+- descriptions
+- code
+- price
+- status
+- stock
+- category
+- tumbnails: array de strings que contengan las rutas donde estan almacenadas las imagenes referentes a dicho productos
+
+a. subir con multer multioples archivos, enviar un conjunto de imagenes con form.data y que al final este consjunto de imagenes se guarden en un arreglo de thumbnails
+Capacidad de subir una o varias y se maneja con una rrelo asi sea una sola imagenes
+
+4. Metodo PUT /:pid debera tomar un productos y actualizarlo no actualizar el id
+
+5. La ruta DELETE /:pid debera elminar el producto con el pid indicado
+
+                                                        CARRITO
+
+1. La ruta POst / debera crear un nuevo carrito con la siguiente estructura
+(no se le pasa parametro ni body debe enviarse sin vuerpo y sin parametro)
+
+- id asegurarte que no se duplique y que se autogenere
+
+- products:(va a ser un array vacio []) array que contendra objetos que representen cada producto
+
+[
+    {
+        "id":1,
+        "products":[]
+    }
+]
+
+
+
+2. La ruta GET /:cid debera listar los productos que pertenezcan al carrito con el parametro cid proporcionados (no es un get general solo debe buscar un carrito)
+
+3. La ruta post/:cid/product/:pid (api/carts/1/products/5) debera agregar el producto al arreglo "products" del carrito seleccionado agregandose como un objeto bajo el siguiente formato
+
+[
+    {
+        "id":1,
+        "products":[
+            {
+                "product":5
+                "quantity":1
+            },
+            {
+                "product":1
+                "quantity":3
+            }
+            ]
+    }
+]
+
+
+- product: SOLO DEBE CONTENER EL ID DEL PRODUCTO(no agregar el producto completo)
+
+- quantity debe contener el numero de ejemplares de dicho producto el producto de momento se agregara de uno en uno ademas si un producto ya existente intenta agregarse al producto, incrementar el campo quantyti de dicho producto
+
+
+- La persistencia se la informacion se implementara utilizando file system donsde los archivos productos.json y carrito.json respaldaran la informacion. crear una colletion en postman
